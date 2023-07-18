@@ -9,7 +9,8 @@ class BaseModel:
     """Custom base for all the classes in the AirBnb console project
     Arttributes:
         id: handles unique user identity
-        created_at: assigns current datetime
+        created_at: assigns with the current datetime when
+        an instance is created
         updated_at: updates current datetime
     Methods:
         __str__: prints the class name, id, and creates dictionary
