@@ -151,7 +151,7 @@ class HBNBCommand(cmd.Cmd):
         serv = storage.all()
         for a in range(len(arg[1:]) + 1):
             if arg[a][0] == '"':
-                arg[a] = args[].replace('"', "")
+                arg[a] = args[a].replace('"', "")
         key = arg[0] + '.' + arg[1]
         attrik = arg[2]
         attriv = arg[3]
