@@ -5,6 +5,7 @@ from uuid import uuid4
 from datetime import datetime
 import models
 
+
 class BaseModel:
     """Custom base for all the classes in the AirBnb console project
     Arttributes:
@@ -49,7 +50,7 @@ class BaseModel:
         models.storage.save()
 
     def to_dict(self):
-        """returns a dictionary containing all 
+        """returns a dictionary containing all
         keys/values of __dict__ instance"""
         map_objet = {}
         for key, val in self.__dict__.items():
